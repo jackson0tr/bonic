@@ -1,0 +1,120 @@
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content,
+.hero__img{
+    width: 50%;
+}
+
+.hero__img img{
+    width: 100%;
+    
+}
+
+.hero__content{
+    padding-top: 40px;
+}
+
+.hero__content h2{
+    font-size: 3rem;
+    line-height: 65px;
+}
+
+.hero__content p{
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+.highlight{
+    color: var(--primary-color);
+
+}
+
+.hero__btns{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.primary__btn,
+.secondary__btn{
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.primary__btn{
+    background: var(--btn-secondary-bg);
+    border: 1px solid var(--btn-primary-bg);
+}
+
+.secondary__btn{
+    background: var(--primary-color);
+}
+
+.light-theme .secondary__btn{
+    background-color: transparent;
+}
+
+.light-theme .secondary__btn:hover{
+    color: #0c123d;
+}
+
+.primary__btn:hover{
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.secondary__btn:hover{
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 992px){
+    .hero__content h2{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero__content h2{
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+
+    .hero__content p{
+        font-size: .9rem;
+    }
+
+    .primary__btn,
+    .secondary__btn{
+        font-size: .8rem;
+    }
+
+    .hero__content,
+    .hero__img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .hero__content,
+    .hero__img{
+        width: 100%;
+    }
+
+    .hero__wrapper{
+        flex-direction: column;
+    }
+}
